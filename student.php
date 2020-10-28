@@ -1,18 +1,25 @@
 <?php
+//die(print_r($_POST));
+// if (isset($_POST['submit'])) {
+  $email=$_POST['email'];
+  $rollno=$_POST['rollno'];
+  $gender=$_POST['gender'];
+  $firstname=$_POST['firstname'];
+  $lastname=$_POST['lastname'];
+  $Address=$_POST['Address'];
+  $City=$_POST['City'];
+  $Country=$_POST['Country'];
+  $Telephonenumber = $_POST['Telephonenumber'];
+  $birthday=$_POST['birthday'];
 
-echo "<h1>Hello World!!!!</h1>";
-echo "<h2>Hello World!!!!</h2>";
+//  $query = mysql_query("update registration set
+// email='$email', rollno='$rollno', gender='$gender',
+//  firstname='$firstname', lastname='$lastname',Address='$Address' , City='$City' ,Country='$Country' ,Telephone='$Telephonenumber' ,birthday='$birthday'", $connection);
+// }
+// die($Telephonenumber);
+// die($_POST['Telephonenumber']);
 
-$email=$_POST['email'];
-$rollno=$_POST['rollno'];
-$gender=$_POST['gender'];
-$firstname=$_POST['firstname'];
-$lastname=$_POST['lastname'];
-$Address=$_POST['Address'];
-$City=$_POST['City'];
-$Country=$_POST['Country'];
-$Telephonenumber=$_POST['Telephonenumber'];
-$birthday=$_POST['birthday'];
+//die(print_r($_POST));
 
 
 // $conn=new mysqli('localhost','root','algolix786','test');
@@ -41,7 +48,10 @@ if (!$conn) {
 
 echo "Connected successfully";
 
+
 $sql = "INSERT INTO registration (email,rollno,gender,firstname,lastname,Address,City,Country,Telephone) VALUES ('$email','$rollno','$gender','$firstname','$lastname','$Address','$City','$Country','$Telephonenumber')";
+//die(print_r($_POST));
+// die($sql);
 if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
 } else {
