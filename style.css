@@ -1,0 +1,58 @@
+
+.top1{
+  margin:20px;
+
+
+}
+.top1>h2{
+  font-size: 30px;
+  padding:0px 0px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top1>h4{
+
+  font-size: 20px;
+  padding:0px 0px 0px 20px;
+  color:#778899;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: :5px solid black;
+
+}
+container-fluid {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px ;
+}
+.col-100 {
+  float: left;
+  width: 100%;
+  margin-top: 6px ;
+}
+
+.col-33 {
+  float: left;
+  width: 33%;
+  margin-top: 6px ;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input {
+  width: 99%;
+  padding: 12px 12px;
+  border: 1px solid #778899;;
+  border-radius: 4px;
+  resize: vertical;
+}

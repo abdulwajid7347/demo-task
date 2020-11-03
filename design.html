@@ -1,63 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0";
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 <style>
 
-body{
-    font-family: Arial;
-     color: white;
-  }
-  .signup,.logo{
-    height: 100%;
-     width: 50%;
-     position: fixed;
-     z-index: 1;
-     top: 0;
-     overflow-x: hidden;
-     padding-top: 20px;
-  }
-  .logo{
-    left: 0;
-    background-color: white;
- }
- .signup {
-    right: 0;
-    background-color: white;
- }
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.logo1{
+  width:100%;
+  height:100vh;
+
+}
+.logo2{
+  position:relative;
+  top:200px;
+  left:75px;
+  width:500px;
+}
+
+h1{
+
+  font-size: 80px;
+  color:blue;
+
+}
+p{
+  color:black;
+  font-size:30px;
+}
+.box{
+
+  height: 500px;
+  width:300px;
+  display: flex;
+  border:1px solid black;
+  position: relative;
+  left:800px;
+}
+container-fluid {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px ;
+}
+.col-100 {
+  float: left;
+  width: 100%;
+  margin-top: 6px ;
+}
+
+.col-33 {
+  float: left;
+  width: 33%;
+  margin-top: 6px ;
+}
 
 
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input {
+  width: 100%;
+  padding: 12px 12px;
+  border: 1px solid #778899;;
+  border-radius: 4px;
+  resize: vertical;
+}
+.top1{
+  margin:20px;
 
 
-  h1{
-      position:relative;
+}
 
-      font-size: 5em;
-      color:blue;
-      top:50%;
-      left:50%;
 
-  }
-  h2{
-    position:absolute;
-    top:10px;
-    font-size: 5em;
-    color:black;
 
-  }
 
 </style>
 </head>
 <body>
-  <div class="logo">
-  <h1>facebook</h1>
-  <h2>Facebook helps you connect and share with the people in your life</h2>
-</div>
+  <div class="logo1">
+    <div class="logo2">
+    <h1>facebook</h1>
+    <p>Facebook helps you connect and share with the people in your life</p>
 
-<div class="signup">
+    </div>
 
-</div>
+
+
+
+
+    <div class="box">
+
+      <form action="">
+        <div class="top1">
+          <h2 >Sign Up</h2>
+       <h4>It's quick and easy.</h4>
+            </div>
+
+        <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-50">
+             <input  type="text" id="fname" name="fname"   placeholder="First Name">
+          </div>
+          <div class="col-50">
+            <input  type="text" id="lname" name="lname"   placeholder="Last name">
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <div class="col-100">
+             <input  type="email" id="email" name="email"   placeholder="Mobile number or email address">
+          </div>
+
+        </div>
+
+
+        <div class="row">
+          <div class="col-100">
+             <input  type="password" id="password" name="password"   placeholder="New password">
+          </div>
+
+        </div>
+      </div>
+      </form>
+    </div>
+
+  </div>
+
+
+
+
 
 
 </body>
