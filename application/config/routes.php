@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $route['test'] = "Test";
 // $route['test/add'] = 'Test/add_student';
 
-$route['default_controller'] = "Stud_controller";
+$route['default_controller'] = "auth";
 // $route['stud'] = "Stud_controller";
 // $route['stud/add'] = 'Stud_controller/add_student';
 // $route['stud/add_view'] = 'Stud_controller/add_student_view';

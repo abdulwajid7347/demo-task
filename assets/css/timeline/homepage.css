@@ -1,0 +1,24 @@
+.commnetbox{
+              margin-left: 20px;
+
+          }
+          .button{
+              margin-left: 20px;
+          }
+          .col-50a {
+            float: left;
+            width: 45%;
+            margin-top: 6px ;
+          }
+
+          .col-50b {
+            float: left;
+            width: 45%;
+            margin-top: 6px ;
+            margin-left: 7%;
+          }
+          .col-100 {
+            float: left;
+            width: 97%;
+            margin-top: 6px ;
+        }
