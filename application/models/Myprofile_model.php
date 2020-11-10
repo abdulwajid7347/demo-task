@@ -18,6 +18,12 @@
         return  $result;
 
   }
+  public function updatedata($data)
+{
+    //$this->db->where('id', $id);
+     $this->db->insert('registration',$data);
+     return $this->db->insert_id();
+}
 
 
 

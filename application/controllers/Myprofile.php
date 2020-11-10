@@ -7,7 +7,9 @@
          //helper('helpers/common');
          // is_loggedin($this);
          //  $this->load->model('Timeline_model');
+         // is_loggedin($this);
            $this->load->model('Myprofile_model');
+            //$this->load->model('Auth_model');
 
       }
 
@@ -35,8 +37,31 @@
       public function updatedata()
       {
 
+          
+          // $this->db->set('status', $status);
+          //
+          //
+          		    $data['email']=$this->input->post('email');
+          			$data['firstname']=$this->input->post('firstname');
+          			$data['lastname']=$this->input->post('lastname');
+                   $data['rollno']=$this->input->post('rollno');
+                   $data['gender']=$this->input->post('gender');
+                   $data['Address']=$this->input->post('Address');
+                   $data['City']=$this->input->post('City');
+                   $data['Country']=$this->input->post('Country');
+                   $data['Telephone']=$this->input->post('Telephonenumber');
 
-           die(print_r('aaaaaaaaaaaaaaa'));
+
+          			$user=$this->Myprofile_model->updatedata($data);
+                      //die(print_r($user,true));
+          			if($user>0){
+                        echo "update successfully";
+          			        //redirect('auth');
+          			}
+          			else{
+          					echo "Insert error !";
+          			}
+
       }
 
 

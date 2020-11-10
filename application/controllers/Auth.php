@@ -48,34 +48,34 @@ class Auth extends CI_Controller {
 
     public function signup() {
         $this->load->view('auth/signup');
+    }
 
 
 
-    // public function savedata()
-    // {
-        if($this->input->post('submit'))
+     public function savedata()
+
 		{
-            die("vwhuvwuxh");
+            //die("vwhuvwuxh");
 
 		    $data['email']=$this->input->post('email');
 			$data['firstname']=$this->input->post('firstname');
 			$data['lastname']=$this->input->post('lastname');
-            $data['email']=$this->input->post('email');
          $data['rollno']=$this->input->post('rollno');
          $data['gender']=$this->input->post('gender');
          $data['Address']=$this->input->post('Address');
          $data['City']=$this->input->post('City');
          $data['Country']=$this->input->post('Country');
-         $data['Telephonenumber']=$this->input->post('Telephonenumber');
+         $data['Telephone']=$this->input->post('Telephonenumber');
 			$user=$this->Auth_model->savedata($data);
+            //die(print_r($user,true));
 			if($user>0){
-			        echo "Records Saved Successfully";
+			        redirect('auth');
 			}
 			else{
 					echo "Insert error !";
 			}
 		}
-    }
+
 
     public function logout() {
         $this->session->unset_userdata(['id','email','rollno','lastname']);

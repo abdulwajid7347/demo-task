@@ -12,7 +12,7 @@ function is_loggedin( $obj ){
     if($obj->session->userdata('id')){
         if($controller =='auth' && $method=='logout'){
             return;
-        }elseif($controller =='auth'){
+        }elseif($controller =='auth' or $controller ==''){
             redirect('timeline');
         }
         return;

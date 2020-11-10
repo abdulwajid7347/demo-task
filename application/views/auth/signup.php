@@ -1,7 +1,7 @@
 <?php $this->load->view('layouts/header.php'); ?>
 <link rel="stylesheet" href="<?php echo base_url('assets/css/auth/signup.css'); ?>">
 
-<form  action="" method="post">
+<form  action="<?= site_url('auth/savedata') ?>" method="post">
     <div class="box">
 
       <div class="box1">
